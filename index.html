@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <div class="nav flex items-center justify-between lg:max-w-[1200px]
+      max-w-[98%]
+      mx-auto my-4 h-26 py-26 px-4">
+      <div class="flex items-center gap-2">
+        <div class="w-[148px]">
+          <img src="./assets/logo.png" alt="company-logo" />
+        </div>
+        <div class="lg:flex hidden md:gap-8 mx-16 text-[14px] text-gray-600
+          font-semibold">
+          <a href="/" class="text-emerald-500">
+            <span>Home</span>
+            <i class="fa-solid fa-caret-down mx-1"></i>
+          </a>
+          <a href="#" class="hover:text-emerald-500 transition-all ease-in-out">
+            <span>Courses</span>
+            <i class="fa-solid fa-caret-down mx-1"></i>
+          </a>
+          <a href="#" class="hover:text-emerald-500 transition-all ease-in-out">
+            <span>Blog</span>
+            <i class="fa-solid fa-caret-down mx-1"></i>
+          </a>
+          <a href="#" class="hover:text-emerald-500 transition-all ease-in-out">Shop</a>
+          <a href="#">
+            <span class="hover:text-emerald-500 transition-all ease-in-out">Pages</span>
+            <i class="fa-solid fa-caret-down mx-1"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hidden md:block">
+        <button class="flex items-center gap-2 bg-emerald-500 text-white h-12
+          w-[130px] justify-center rounded text-[14px]">
+          <i class="fa-solid fa-right-to-bracket"></i>
+          <div>Sign In</div>
+        </button>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- hero -->
+    <div class="sm:h-[85vh] md:h-[50vh] lg:h-[75vh] my-10 lg:flex items-center
+      justify-center mx-auto max-w-[95%] lg:max-w-[1180px] bg-[#faf4f5]">
+      <div class=" md:flex-row flex flex-col justify-center items-center">
+        <div class="grid gap-4 mx-4 lg:max-w-[50%]">
+          <div class="text-sm text-white text-center">
+            <div class="bg-gradient-to-r h-8 text-xs rounded flex items-center
+              justify-center w-[200px] from-orange-400 to-emerald-500">
+              LISTEN TO OUR NEW ANTHEM
+            </div>
+          </div>
+          <div>
+            <h1 class="leading-snug text-[#323d47] font-extrabold text-[30px]
+              lg:text-[50px]">
+              Find The Most Exciting Online Courses
+            </h1>
+          </div>
+          <div class="grid gap-4">
+            <p class="leading-8 sm:text-[16px] lg:text-xl text-gray-600 ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+            <div class="w-full">
+              <div class="flex items-center rounded-md ">
+                <div class="relative rounded-md shadow-sm w-full">
+                  <div class="absolute inset-y-0 left-0 pl-3 flex items-center
+                    pointer-events-none">
+                    <svg class="h-5 w-5 text-gray-400" fill="currentColor"
+                      viewBox="0 0 20 20">
+                      <path d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89
+                        3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6
+                        0 012 8z" />
+                      </svg>
+                    </div>
+                    <input id="search" class="form-input block w-full
+                      md:w-[300px] lg:w-[450px] pl-10 pr-3 py-4 rounded-l-md
+                      transition-all duration-500 ease-in-out sm:text-sm
+                      sm:leading-5" placeholder="Search your courses" />
+                  </div>
+                  <button type="submit" class="px-10 py-[16px] font-medium
+                    text-white bg-emerald-500 rounded-r hover:bg-emerald-700
+                    focus:outline-none focus:shadow-outline-blue">
+                    Search
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class=" lg:max-w-[50%]">
+            <img src="./assets/side-1.png" class="w-[400px] md:w-[800px]
+              lg:w-[1000px]" alt="" />
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <div class="h-[80vh] bg-white">
+
+      </div>
+      <!--  -->
+
+      <!-- Categories section -->
+      <section class=" lightBgColor h-auto lg:h-[80vh] flex font-medium
+        items-center justify-center w-full p-10">
+        <div class="grid gap-8">
+          <div class="grid content-center justify-items-center gap-3">
+            <div class=" break-all">
+              <h1 class="text-3xl darktext font-bold text-center">Select Your
+                <span class="text-emerald-500">Categories</span>
+              </h1>
+            </div>
+            <div class="max-w-[600px] text-center">
+              <p class="text-[#3c4852]">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+            </div>
+          </div>
+
+          <div class="grid grid-flow-row sm:grid-cols-2 gap-10 grid-cols-1
+            content-center justify-items-center lg:grid-cols-4 ">
+            <div class="bg-white hover:bg-emerald-500 rounded-lg group
+              transition-all duration-200 ease-in-out ">
+              <a
+                class="relative block rounded-md border border-gray-100 p-8
+                shadow-xl w-[270px] h-[210px]"
+                href="">
+                <div
+                  class="absolute right-4 top-4 rounded-full bg-green-100 px-3
+                  py-1.5 text-xs font-medium text-green-600 ">
+                  <span>View Courses</span> <i class="fa-sharp fa-solid
+                    fa-angles-right"></i>
+                </div>
+
+                <div class="mt-4 text-gray-500 sm:pr-8">
+                  <div class="text-emerald-500 text-2xl group-hover:text-white">
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                  <h3 class="mt-4 text-xl font-bold text-gray-900
+                    group-hover:text-white">Development</h3>
+                  <p class="mt-2 hidden text-sm sm:block">
+                    3 courses
+                  </p>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="bg-white hover:bg-emerald-500 rounded-lg group
+              transition-all duration-200 ease-in-out">
+              <a
+                class="relative block rounded-md border border-gray-100 p-8
+                shadow-xl w-[270px] h-[210px]"
+                href="">
+                <div
+                  class="absolute right-4 top-4 rounded-full bg-green-100 px-3
+                  py-1.5 text-xs font-medium text-green-600 ">
+                  <span>View Courses</span> <i class="fa-sharp fa-solid
+                    fa-angles-right"></i>
+                </div>
+
+                <div class="mt-4 text-gray-500 sm:pr-8">
+                  <div class="text-emerald-500 text-2xl group-hover:text-white">
+                    <i class="fa-sharp fa-solid fa-pen-nib"></i>
+                  </div>
+                  <h3 class="mt-4 text-xl font-bold text-gray-900
+                    group-hover:text-white">Web Desgining</h3>
+                  <p class="mt-2 hidden text-sm sm:block">
+                    6 courses
+                  </p>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="bg-white hover:bg-emerald-500 rounded-lg group
+              transition-all duration-200 ease-in-out">
+              <a
+                class="relative block rounded-md border border-gray-100 p-8
+                shadow-xl w-[270px] h-[210px]"
+                href="">
+                <div
+                  class="absolute right-4 top-4 rounded-full bg-green-100 px-3
+                  py-1.5 text-xs font-medium text-green-600 ">
+                  <span>View Courses</span> <i class="fa-sharp fa-solid
+                    fa-angles-right"></i>
+                </div>
+
+                <div class="mt-4 text-gray-500 sm:pr-8">
+                  <div class="text-emerald-500 text-2xl group-hover:text-white">
+                    <i class="fa-solid fa-leaf"></i>
+                  </div>
+                  <h3 class="mt-4 text-xl font-bold text-gray-900
+                    group-hover:text-white">Lifestyle</h3>
+                  <p class="mt-2 hidden text-sm sm:block">
+                    4 courses
+                  </p>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="bg-white hover:bg-emerald-500 rounded-lg group
+              transition-all duration-200 ease-in-out">
+              <a
+                class="relative block rounded-md border border-gray-100 p-8
+                shadow-xl w-[270px] h-[210px]"
+                href="">
+                <div
+                  class="absolute right-4 top-4 rounded-full bg-green-100 px-3
+                  py-1.5 text-xs font-medium text-green-600 ">
+                  <span>View Courses</span> <i class="fa-sharp fa-solid
+                    fa-angles-right"></i>
+                </div>
+
+                <div class="mt-4 text-gray-500 sm:pr-8">
+                  <div class="text-emerald-500 text-2xl group-hover:text-white">
+                    <i class="fa-solid fa-notes-medical"></i>
+                  </div>
+                  <h3 class="mt-4 text-xl font-bold text-gray-900
+                    group-hover:text-white">Health & Fitness</h3>
+                  <p class="mt-2 hidden text-sm sm:block">
+                    7 courses
+                  </p>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="bg-white hover:bg-emerald-500 rounded-lg group
+              transition-all duration-200 ease-in-out">
+              <a
+                class="relative block rounded-md border border-gray-100 p-8
+                shadow-xl w-[270px] h-[210px]"
+                href="">
+                <div
+                  class="absolute right-4 top-4 rounded-full bg-green-100 px-3
+                  py-1.5 text-xs font-medium text-green-600 ">
+                  <span>View Courses</span> <i class="fa-sharp fa-solid
+                    fa-angles-right"></i>
+                </div>
+
+                <div class="mt-4 text-gray-500 sm:pr-8">
+                  <div class="text-emerald-500 text-2xl group-hover:text-white">
+                    <i class="fa-solid fa-computer"></i>
+                  </div>
+                  <h3 class="mt-4 text-xl font-bold text-gray-900
+                    group-hover:text-white">IT and Software</h3>
+                  <p class="mt-2 hidden text-sm sm:block">
+                    2 courses
+                  </p>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="bg-white hover:bg-emerald-500 rounded-lg group
+              transition-all duration-200 ease-in-out">
+              <a
+                class="relative block rounded-md border border-gray-100 p-8
+                shadow-xl w-[270px] h-[210px]"
+                href="">
+                <div
+                  class="absolute right-4 top-4 rounded-full bg-green-100 px-3
+                  py-1.5 text-xs font-medium text-green-600 ">
+                  <span>View Courses</span> <i class="fa-sharp fa-solid
+                    fa-angles-right"></i>
+                </div>
+
+                <div class="mt-4 text-gray-500 sm:pr-8">
+                  <div class="text-emerald-500 text-2xl group-hover:text-white">
+                    <i class="fa-solid fa-photo-film"></i>
+                  </div>
+                  <h3 class="mt-4 text-xl font-bold text-gray-900
+                    group-hover:text-white">Photography</h3>
+                  <p class="mt-2 hidden text-sm sm:block">
+                    3 courses
+                  </p>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="bg-white hover:bg-emerald-500 rounded-lg group
+              transition-all duration-200 ease-in-out">
+              <a
+                class="relative block rounded-md border border-gray-100 p-8
+                shadow-xl w-[270px] h-[210px]"
+                href="">
+                <div
+                  class="absolute right-4 top-4 rounded-full bg-green-100 px-3
+                  py-1.5 text-xs font-medium text-green-600 ">
+                  <span>View Courses</span> <i class="fa-sharp fa-solid
+                    fa-angles-right"></i>
+                </div>
+
+                <div class="mt-4 text-gray-500 sm:pr-8">
+                  <div class="text-emerald-500 text-2xl group-hover:text-white">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                  </div>
+                  <h3 class="mt-4 text-xl font-bold text-gray-900
+                    group-hover:text-white">Finance & Accounting</h3>
+                  <p class="mt-2 hidden text-sm sm:block">
+                    5 courses
+                  </p>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="bg-white hover:bg-emerald-500 rounded-lg group
+              transition-all duration-200 ease-in-out">
+              <a
+                class="relative block rounded-md border border-gray-100 p-8
+                shadow-xl w-[270px] h-[210px]"
+                href="">
+                <div
+                  class="absolute right-4 top-4 rounded-full bg-green-100 px-3
+                  py-1.5 text-xs font-medium text-green-600 ">
+                  <span>View Courses</span> <i class="fa-sharp fa-solid
+                    fa-angles-right"></i>
+                </div>
+
+                <div class="mt-4 text-gray-500 sm:pr-8">
+                  <div class="text-emerald-500 text-2xl group-hover:text-white">
+                    <i class="fa-solid fa-suitcase-medical"></i>
+                  </div>
+                  <h3 class="mt-4 text-xl font-bold text-gray-900
+                    group-hover:text-white">Medical</h3>
+                  <p class="mt-2 hidden text-sm sm:block">
+                    2 courses
+                  </p>
+                </div>
+              </a>
+
+            </div>
+          </div>
+        </section>
+        <!--  -->
+
+        <section class=" bg-white h-auto lg:h-[95vh] flex font-medium
+          items-center justify-center w-full p-10">
+          <div class="grid gap-8">
+            <div class="grid content-center justify-items-center gap-3">
+              <div class=" break-all">
+                <h1 class="text-3xl darktext font-bold text-center">Our Top
+                  <span
+                    class="text-emerald-500">Instructors</span>
+                </h1>
+              </div>
+              <div class="max-w-[600px] text-center">
+                <p class="text-[#3c4852]">Lorem ipsum dolor sit amet,
+                  consectetur
+                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+              </div>
+            </div>
+
+            <div class="swiper mySecondSwiper max-w-[95%] xl:max-w-[1200px]
+              bg-white flex justify-center items-center ">
+
+              <div class="swiper-wrapper ">
+                <div class="swiper-slide flex justify-center items-center">
+                  <div class="border border-gray-200 overflow-hidden rounded-lg
+                    shadow transition hover:shadow-lg md:w-[330px] sm:w-[300px]
+                    lg:w-[370px]">
+                    <img alt="Office"
+                      src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                      class="lg:h-96 lg:w-96 md:h-[330px] h-[300px] object-cover
+                      hover:scale-110 transition-all duration-300 ease-in-out"
+                      />
+                    <div class="bg-white p-4 sm:p-6 flex items-center
+                      justify-center">
+                      <div class="grid content-center gap-2
+                        justify-items-center">
+                        <h1>Name</h1>
+                        <div class="flex gap-2 items-center"><i class="fa-solid
+                            fa-user"></i><span>5 enrolled</span></div>
+                        <button class="bg-emerald-500 border px-8 py-3 rounded
+                          hover:bg-white hover:border-emerald-500 transition-all
+                          duration-300 ease-in-out text-white
+                          hover:text-emerald-500">Enroll Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                  <div class="border border-gray-200 overflow-hidden rounded-lg
+                    shadow transition hover:shadow-lg md:w-[330px] sm:w-[300px]
+                    lg:w-[370px]">
+                    <img alt="Office"
+                      src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                      class="lg:h-96 lg:w-96 md:h-[330px] h-[300px] object-cover
+                      hover:scale-110 transition-all duration-300 ease-in-out"
+                      />
+                    <div class="bg-white p-4 sm:p-6 flex items-center
+                      justify-center">
+                      <div class="grid content-center gap-2
+                        justify-items-center">
+                        <h1>Name</h1>
+                        <div class="flex gap-2 items-center"><i class="fa-solid
+                            fa-user"></i><span>5 enrolled</span></div>
+                        <button class="bg-emerald-500 border px-8 py-3 rounded
+                          hover:bg-white hover:border-emerald-500 transition-all
+                          duration-300 ease-in-out text-white
+                          hover:text-emerald-500">Enroll Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                  <div class="border border-gray-200 overflow-hidden rounded-lg
+                    shadow transition hover:shadow-lg md:w-[330px] sm:w-[300px]
+                    lg:w-[370px]">
+                    <img alt="Office"
+                      src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                      class="lg:h-96 lg:w-96 md:h-[330px] h-[300px] object-cover
+                      hover:scale-110 transition-all duration-300 ease-in-out"
+                      />
+                    <div class="bg-white p-4 sm:p-6 flex items-center
+                      justify-center">
+                      <div class="grid content-center gap-2
+                        justify-items-center">
+                        <h1>Name</h1>
+                        <div class="flex gap-2 items-center"><i class="fa-solid
+                            fa-user"></i><span>5 enrolled</span></div>
+                        <button class="bg-emerald-500 border px-8 py-3 rounded
+                          hover:bg-white hover:border-emerald-500 transition-all
+                          duration-300 ease-in-out text-white
+                          hover:text-emerald-500">Enroll Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </section>
+
+            <!-- review section -->
+            <section class="flex justify-center md:h-[50vh] items-center h-auto
+              p-8
+              bg-[#F7F8F9]">
+              <div class="hidden lg:block previous cursor-pointer">
+                <i class="fa-solid fa-angle-left"></i>
+              </div>
+              <div class="grid lg:gap-8">
+                <div class="grid content-center justify-items-center gap-3">
+                  <div class=" break-all">
+                    <h1 class="text-3xl darktext font-bold text-center">Our
+                      Student <span class="accentColor">Reviews</span></h1>
+                  </div>
+                  <div class="max-w-[600px] text-center">
+                    <p class="text-[#3c4852]">Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad
+                      minim veniam.</p>
+                  </div>
+                </div>
+
+                <div class="swiper mySwiper max-w-[95%] xl:max-w-[1150px]
+                  bg-[#F7F8F9] flex justify-center items-center ">
+
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide flex items-center justify-center">
+                      <div>
+                        <div class="w-[370px] px-[30px] h-[220px] bg-white
+                          rounded-md flex justify-center items-center">
+                          <div class="grid gap-2">
+                            <div class="flex items-center gap-4">
+                              <div class="w-[75px] h-[75px] rounded-full
+                                bg-gray-300"></div>
+                              <div class="flex flex-col justify-center">
+                                <h1 class="text-sm font-bold">Name 1</h1>
+                                <p class="text-sm">Student</p>
+                                <div class="bg-orange-400 text-sm text-white p-1
+                                  rounded">
+                                  <i class="fa-solid fa-star"></i><span>4.5</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flex justify-center ">
+                              <p class="text-[#3c4852] text-[14px]">Lorem ipsum
+                                dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+
+
+
+                    <div class="swiper-slide flex items-center justify-center">
+                      <div>
+                        <div class="w-[370px] px-[30px] h-[220px] bg-white
+                          rounded-md flex justify-center items-center">
+                          <div class="grid gap-2">
+                            <div class="flex items-center gap-4">
+                              <div class="w-[75px] h-[75px] rounded-full
+                                bg-gray-300"></div>
+                              <div class="flex flex-col justify-center">
+                                <h1 class="text-sm font-bold">Name 2</h1>
+                                <p class="text-sm">Student</p>
+                                <div class="bg-orange-400 text-sm text-white p-1
+                                  rounded">
+                                  <i class="fa-solid fa-star"></i><span>4.5</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flex justify-center">
+                              <p class="text-[#3c4852] text-[14px]">Lorem ipsum
+                                dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide flex items-center justify-center">
+                      <div>
+                        <div class="w-[370px] px-[30px] h-[220px] bg-white
+                          rounded-md flex justify-center items-center">
+                          <div class="grid gap-2">
+                            <div class="flex items-center gap-4">
+                              <div class="w-[75px] h-[75px] rounded-full
+                                bg-gray-300"></div>
+                              <div class="flex flex-col justify-center">
+                                <h1 class="text-sm font-bold">Name 3</h1>
+                                <p class="text-sm">Student</p>
+                                <div class="bg-orange-400 text-sm text-white p-1
+                                  rounded">
+                                  <i class="fa-solid fa-star"></i><span>4.5</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flex justify-center">
+                              <p class="text-[#3c4852] text-[14px]">Lorem ipsum
+                                dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="swiper-slid flex items-center justify-center">
+                      <div>
+                        <div class="w-[370px] px-[30px] h-[220px] bg-white
+                          rounded-md flex justify-center items-center">
+                          <div class="grid gap-2">
+                            <div class="flex items-center gap-4">
+                              <div class="w-[75px] h-[75px] rounded-full
+                                bg-gray-300"></div>
+                              <div class="flex flex-col justify-center">
+                                <h1 class="text-sm font-bold">Name 3</h1>
+                                <p class="text-sm">Student</p>
+                                <div class="bg-orange-400 text-sm text-white p-1
+                                  rounded">
+                                  <i class="fa-solid fa-star"></i><span>4.5</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flex justify-center">
+                              <p class="text-[#3c4852] text-[14px]">Lorem ipsum
+                                dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hidden lg:block next cursor-pointer">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+
+
+            </section>
+
+            <section class="bg-white lg:flex pt-16 items-center justify-center
+              h-auto w-screen">
+              <div class="flex items-center justify-center">
+                <div class="lg:flex-row flex max-w-[1200px] flex-col
+                  items-center">
+                  <div class="flex flex-col justify-center gap-6 items-center
+                    xl:items-start ">
+                    <div class="flex flex-col gap-6 max-w-[80%] justify-center">
+                      <h1 class="text-[42px] font-bold">Get The Learning App</h1>
+                      <p>At vero eos et accusamus et iusto odio dignissimos
+                        ducimus qui blanditiis praesentium voluptatum deleniti
+                        atque corrupti quos dolores et quas molestias excepturi
+                        sint occaecati cupiditate non provident, similique sunt
+                        in culpa qui officia deserunt mollitia animi, id est
+                        laborum et dolorum fuga.</p>
+                    </div>
+                    <div class="flex sm:flex gap-4 hala">
+                      <button class="flex items-center gap-4 px-4 sm:px-6 py-2
+                        md:px-8 md:py-3 text-md bg-black text-white rounded-md">
+                        <div class="">
+                          <i class="fa-brands fa-apple md:text-5xl text-3xl"></i>
+                        </div>
+                        <div class="text-left">
+                          <p>Download on the <br> <span class="text-2xl
+                              font-semibold">App Store</span></p>
+                        </button>
+                        <button class="flex items-center gap-4 px-5 sm:px-10
+                          md:px-12 text-md bg-black text-white rounded-md ">
+                          <div>
+                            <i class="fa-brands fa-google-play text-2xl
+                              sm:text-4xl"></i>
+                          </div>
+                          <div class="text-left">
+                            <p>Get it on</p>
+                            <h1 class="text-xl font-semibold">Google Play</h1>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="w-[300px] sm:w-[400px] md:w-[500px]
+                        xl:w-[1000px] flex items-center justify-center ">
+                        <img src="./assets/app.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="min-h-[15vh] p-6 bg-emerald-500 flex
+                  justify-center">
+                  <div class="flex flex-col md:flex-row items-center
+                    justify-between w-full max-w-[98%] lg:max-w-[1200px]">
+                    <div class="text-white leading-7">
+                      <h1 class="font-bold text-2xl">Do You Have Any Questions?</h1>
+                      <h1>We'll help you to grow your career</h1>
+                    </div>
+                    <div>
+                      <button class="bg-white px-8 py-3 rounded-full
+                        border-[6px] border-emerald-400 font-bold darktext
+                        transition-all duration-500 hover:text-emerald-500">Contact
+                        Us Today</button>
+                    </div>
+                  </div>
+                </section>
+                <!-- footer -->
+
+                <footer class="bg-white">
+                  <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6
+                    lg:px-8">
+                    <div class="flex-col lg:items-start lg:gap-8">
+                      <div>
+                        <img src="./assets/logo.png" alt="">
+                      </div>
+
+                      <div
+                        class="grid grid-cols-2 gap-8 mt-8 lg:mt-0
+                        lg:grid-cols-5 lg:gap-y-16">
+                        <div class="col-span-2 ">
+                          <div>
+                            <h2 class="text-2xl font-bold text-gray-900">
+                              Get the latest news!
+                            </h2>
+
+                            <p class="mt-4 text-gray-500">
+                              Lorem ipsum dolor, sit amet consectetur
+                              adipisicing elit. Esse non
+                              cupiditate quae nam molestias.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="col-span-2 lg:col-span-3 lg:flex
+                          lg:items-end">
+                          <form class="w-full">
+                            <label for="UserEmail" class="sr-only"> Email
+                            </label>
+
+                            <div
+                              class="p-2 border border-gray-100
+                              focus-within:ring sm:flex sm:items-center
+                              sm:gap-4">
+                              <input
+                                type="email"
+                                id="UserEmail"
+                                placeholder="john@rhcp.com"
+                                class="w-full border-none
+                                focus:border-transparent focus:ring-transparent
+                                sm:text-sm"
+                                />
+
+                              <button
+                                class="w-full px-6 py-3 mt-1 text-sm font-bold
+                                tracking-wide text-white uppercase
+                                transition-none bg-teal-500 hover:bg-teal-600
+                                sm:mt-0 sm:w-auto sm:flex-shrink-0">
+                                Sign Up
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+
+                        <div class="col-span-2 sm:col-span-1">
+                          <p class="font-medium text-gray-900">Services</p>
+
+                          <nav aria-label="Footer Navigation - Services"
+                            class="mt-6">
+                            <ul class="space-y-4 text-sm">
+                              <li>
+                                <a href="#" class="text-gray-700 transition
+                                  hover:opacity-75">
+                                  1on1 Coaching
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="#" class="text-gray-700 transition
+                                  hover:opacity-75">
+                                  Company Review
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="#" class="text-gray-700 transition
+                                  hover:opacity-75">
+                                  Accounts Review
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="#" class="text-gray-700 transition
+                                  hover:opacity-75">
+                                  HR Consulting
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="#" class="text-gray-700 transition
+                                  hover:opacity-75">
+                                  SEO Optimisation
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+
+                        <div class="col-span-2 sm:col-span-1">
+                          <p class="font-medium text-gray-900">Legal</p>
+
+                          <nav aria-label="Footer Navigation - Legal"
+                            class="mt-6">
+                            <ul class="space-y-4 text-sm">
+                              <li>
+                                <a href="#" class="text-gray-700 transition
+                                  hover:opacity-75">
+                                  Accessibility
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="#" class="text-gray-700 transition
+                                  hover:opacity-75">
+                                  Returns Policy
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="#" class="text-gray-700 transition
+                                  hover:opacity-75">
+                                  Refund Policy
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="#" class="text-gray-700 transition
+                                  hover:opacity-75">
+                                  Hiring Statistics
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+
+                        <div class="col-span-2 sm:col-span-1">
+                          <p class="font-medium text-gray-900">Downloads</p>
+                          <nav aria-label="Footer Navigation - Downloads"
+                            class="mt-6">
+                            <ul class="space-y-4 text-sm">
+                              <li>
+                                <a href="#" class="text-gray-700 transition
+                                  hover:opacity-75">
+                                  Marketing Calendar
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="#" class="text-gray-700 transition
+                                  hover:opacity-75">
+                                  SEO Infographics
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                    <div class="pt-8 mt-8 border-t border-gray-100">
+                      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                        <p class="text-xs text-left text-gray-500">
+                          &copy; 2022. Company Name. All rights reserved.
+                        </p>
+
+                        <nav aria-label="Footer Navigation - Support">
+                          <ul class="flex flex-wrap justify-start gap-4 text-xs
+                            lg:justify-end">
+                            <li>
+                              <a href="#" class="text-gray-500 transition
+                                hover:opacity-75">
+                                Terms & Conditions
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="text-gray-500 transition
+                                hover:opacity-75">
+                                Privacy Policy
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="text-gray-500 transition
+                                hover:opacity-75">
+                                Cookies
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+
+
+
+                <script type="module" src="/main.js"></script>
+                <script
+                  src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+                <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 12,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: false,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".next",
+        prevEl: ".previous",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        800: {
+          slidesPerView: 2
+        },
+        1200: {
+          slidesPerView: 3
+        },
+      }
+    });
+
+    let newswiper = new Swiper(".mySecondSwiper", {
+      slidesPerView: 0,
+      spaceBetween: 50,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: false,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        660: {
+          slidesPerView: 2
+        },
+        1200: {
+          slidesPerView: 3
+        },
+      }
+    });
+  </script>
+              </body>
+
+            </html>

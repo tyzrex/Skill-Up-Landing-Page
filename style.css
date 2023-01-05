@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Jost', sans-serif;
+    background-color: #faf4f5;
+}
+
+.lightBgColor{
+    @apply bg-[#F7F8F9]
+}
+
+.darktext{
+    @apply text-[#3c4852]
+}
+
+.accentColor{
+    @apply text-emerald-500
+}
+
+.accentBackground{
+    @apply bg-emerald-500
+}
+.swiper-wrapper{
+    background-color: #faf4f5;
+}
+.swiper-button-next{
+        background-color: white;
+        @apply bg-emerald-500;
+        border-radius: 50%;
+        transform: scale(0.35) translate(50%);    
+        left:20px;
+        right: 500px;
+        padding: 30px;
+        color: #faf4f5 !important;
+        fill: black !important;
+        stroke: black !important;
+}
+.swiper-button-prev {
+    background-color: white;
+    @apply bg-emerald-500;
+    transform: scale(0.35) translateX(-125%);
+    border-radius: 50%;
+    padding: 30px;
+    color: #faf4f5 !important;
+    fill: black !important;
+    stroke: black !important;
+}
+
+.next{
+    padding: 4px 12px;
+    position: relative;
+    top:12%;
+    background-color: #10b981;
+    color: white;
+    border-radius: 50%;
+}
+
+.previous{
+    padding: 4px 12px;
+    position: relative;
+    top:12%;
+    left:-1%;
+    color: white;
+    background-color: #10b981;
+    border-radius: 50%;
+}
+
+/* make a media query for 340px */
+@media (max-width: 360px) {
+    .hala{
+        flex-direction: column;
+    }
+    .hala button{
+        padding: 10px 20px;
+    }
+}
