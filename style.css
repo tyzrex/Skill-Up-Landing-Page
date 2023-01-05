@@ -76,3 +76,7 @@ body{
         padding: 10px 20px;
     }
 }
+
+.footerlinks li{
+    @apply hover:text-white transition-all ease-in-out duration-300;
+}
