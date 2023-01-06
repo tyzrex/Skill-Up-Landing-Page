@@ -12,5 +12,12 @@ window.addEventListener('scroll', function() {
   }
 })
 
+let resbtn = document.getElementById('res-btn');
+let hello = document.getElementById('hello');
+
+resbtn.addEventListener('click', function() {
+  hello.classList.toggle('hidden');
+  hello.classList.add("transition-all", "duration-500", "ease-in-out")
+})
 
 

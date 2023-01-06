@@ -80,3 +80,4 @@ body{
 .footerlinks li{
     @apply hover:text-white transition-all ease-in-out duration-300;
 }
+
